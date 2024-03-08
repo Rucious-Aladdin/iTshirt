@@ -15,7 +15,34 @@ $git config --list
 $git add .
 (2) 특정파일만 추가
 $git add "파일이름"
+(3) 현재 add 된 파일 확인
+$git status
 
 #commit -> 버전 업그레이드전 설명
+(1) 기본 commit 명령어
 $git commit -m "수정 내용 설명"
+(2) commit 된 내역 확인
+$git log
+
+#버전 되돌리기(commit 이전 버전으로 revision)
+$git checkout "git log 입력시 등장하는 커밋 앞 식별자 7자리"
+*바로 가장 최신 commit으로 되돌리기"
+$git checkout -
+**이명령어는 좀 위험하므로 웬만하면 쓰지 않도록 한다..
+
+#로컬 저장소 및 원격저장소 연결
+$git remote add origin "연결할 저장소 레포지토리 주소"
+
+#커밋을 둘 장소 이름 짓기
+$git branch -M main
+
+#원격저장소에 파일올리기
+$git push origin main(브랜치 이름)
+
+#원격저장소의 커밋을 로컬 저장소에 내려받기
+(1) 그자리에 바로 내려 받기(한칸 띄우고 마침표)
+$git clone https://github.com/Rucious-Aladdin/iTshirt.git .
+(2)폴더이름 까지 통째로 내려받기
+$git clone https://github.com/Rucious-Aladdin/iTshirt.git
+
 
