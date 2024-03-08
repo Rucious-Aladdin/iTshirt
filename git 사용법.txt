@@ -1,0 +1,21 @@
+#local 폴더 내에서 우클릭 -> git bash here
+
+#git repository 초기화, .git 폴더 생성
+$git init
+
+#사용자 정보 입력후 등록
+$git config --global user.email "이메일주소"
+$git config --global user.name "사용자이름"
+
+#사용자 정보 등록 확인
+$git config --list
+
+#버전으로 만들 파일 선택
+(1) 현재 경로내의 모든 변경사항 추가
+$git add .
+(2) 특정파일만 추가
+$git add "파일이름"
+
+#commit -> 버전 업그레이드전 설명
+$git commit -m "수정 내용 설명"
+
